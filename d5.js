@@ -69,7 +69,7 @@ const dice = () => {
     return dice
 }
 
-console.log("The number you have rolled is: " + dice())
+//console.log("The number you have rolled is: " + dice())
 
 /* Ex.2 
     Write the function whoIsBigger that receives 2 numbers and returns the bigger of the two.
@@ -83,7 +83,7 @@ function whoIsBigger (num1, num2, isNan)  {  //Wanted to practise with ternarys 
            : "A number must be entered"
 }
 
-console.log("dfudgfdgfdgf: " + whoIsBigger("sf", 70))
+//console.log(whoIsBigger("44", 70))
 
 /* Ex.3
     Write the function splitMe that receives a string and returns an array with every word in that string.
@@ -93,7 +93,7 @@ console.log("dfudgfdgfdgf: " + whoIsBigger("sf", 70))
 const splitMe = function (str) {
     return str.trim().split(" "); //I have used trim to get rid of "whitespace"(spaces for example), split to obviously split. 
 };
-console.log(splitMe("I Love Coding When It Finally Works After Staring At The Problem For Five Hours"));
+//console.log(splitMe("I Love Coding When It Finally Works After Staring At The Problem For Five Hours"));
 
 
 /* Ex.4
@@ -133,7 +133,7 @@ function non_digit_string(str) {
 }
 
 const str = `I love 123 whatever`;
-console.log("A string without numbers: " + non_digit_string(str));
+//console.log("A string without numbers: " + non_digit_string(str));
 
 
 /* Ex.6 
@@ -149,14 +149,14 @@ function isThisAnEmail(_mail)
     
     return (false)
 }
- console.log(isThisAnEmail("email@email.com"))  // This is all I could think of, the problem is I could type any nonses and get "true"
+ //console.log(isThisAnEmail("email@email.com"))  // This is all I could think of, the problem is I could type any nonses and get "true"
 /* Ex.7
    Write the function whatDayIsIt that should return the current day of the week.
 
 */
 
 let d1 = new Date()
-console.log(d1.toString()) //This seemed like the easiest way, but I would appreciate where I could go to find out more 
+//console.log(d1.toString()) //This seemed like the easiest way, but I would appreciate where I could go to find out more 
 
 
 /* Ex.8
@@ -181,7 +181,7 @@ console.log(d1.toString()) //This seemed like the easiest way, but I would appre
 
  }
 
- console.log(rollTheDice())
+ //console.log(rollTheDice())
 
 /* Ex.9
    Write the function howManyDays that receives a date and returns the number of days that has passed since that day.
@@ -192,80 +192,15 @@ function days_passed(dt) {
   
     return Math.ceil((current - previous + 1) / 86400000);
   }
-  console.log("Number of days passed is: " + days_passed(new Date(2020, 10, 14)));
+  //console.log("Number of days passed is: " + days_passed(new Date(2020, 10, 14)));
 
   
   
-
 /* Ex.10
-   Write the function isTodayMyBDay that returns true if it's your birthday, false otherwise.*/
+   Write the function isTodayMyBDay that returns true if it's your birthday, false otherwise.
 
+   
 
-   // JS Arrays // Objs
-// NOTE: movies array is defined at the end of the file!
-
-/* Ex.11
-   Write the function deleteProp that receives an object and a string, and returns the object after deleting the property with that given name.
-*/
-
-/* Ex.12 
-    Write the function olderMovie that finds the older movie in the array.
-*/
-
-/* Ex.13
-    Write the function countMovies that returns the number of movies into the array.
-*/
-
-
-
-
-/* Ex.14
-    Write the function onlyTitles that creates an array with only the titles of the movies.
-*/
-
-/*for (let Titles in movies) {
-    console.log(`{$movies}: ${movies[Title]}`);
-}*/
-
-//cannot access movies before initialization, googled this statement got no answer
- 
-
-/* Ex.15
-   Write the function onlyThisMillennium that returns only the movies produced in this millennium.
-*/
-
-//let onlyThisMillennium = movies.filter(year => year > 2000);
-
-const thisMill = function (m) {
-    let results = [];
-    movies.forEach(year in movies) 
-        console.log(thisMill);
-    
-}
-
-console.log(thisMill()) //initiliazation error :) :) :) :) :) :) 
-
-/* Ex.16 
-    Write the function getMovieById that receives an id and returns the movie with the given id.
-*/
-
-
-
-/* Ex.17
-    Write the function sumYears that returns the sum of the years the movie has been produced.
-*/
-
-/* Ex.18
-    Write the function searchMovie that receives a string and returns all the movies with that string in the title.
-*/
-    //with map???
-/* Ex.19
-    Write the function searchAndDivide that receives a string and returns an object with an array "match" with all the movies that contains the given string in the title, and another array "nonMatch" with all the other movies.
-*/
-
-/* Ex.20
-   Write the function deleteX that receives a number and returns an array without the element in the given position.
-*/
 
 /* Ex.21
   Create a function halfTree that recives the height creates an "*" half tree with that height.
@@ -282,7 +217,7 @@ for (let line = "*"; line.length < 4; line += "*")
 /* Ex.22 
   Create a function tree that receives the height and creates an "*" tree with that height.
   Example: 
-  tree(3)
+  tree3
     *  
    *** 
   *****
@@ -297,13 +232,13 @@ for (let line = "*"; line.length < 4; line += "*")
     return num > 1;
   }
 
-  console.log(isPrime(567567567))
+  //console.log(isPrime(567567567))
 
-  console.log(movies)
+
 
   
 
-
+//**************** arrays exercises are below ********/
 
 
 
@@ -424,3 +359,109 @@ for (let line = "*"; line.length < 4; line += "*")
         "https://m.media-amazon.com/images/M/MV5BMTc5MDE2ODcwNV5BMl5BanBnXkFtZTgwMzI2NzQ2NzM@._V1_SX300.jpg",
     },
   ]
+
+  
+  
+     // JS Arrays // Objs
+// NOTE: movies array is defined at the end of the file!
+
+/* Ex.11
+   Write the function deleteProp that receives an object and a string, and returns the object after deleting the property with that given name.
+*/
+
+/* Ex.12 
+    Write the function olderMovie that finds the older movie in the array.
+*/
+
+/* Ex.13
+    Write the function countMovies that returns the number of movies into the array.
+*/
+
+
+
+
+/* Ex.14
+    Write the function onlyTitles that creates an array with only the titles of the movies.
+*/
+const titles =[]
+for (let movie of movies) {
+ 
+    titles.push(movie.Title)
+}
+
+const mappedMovies = movies.map(m=> ({movie:m.Title, year:m.Year, isGood:true}))
+console.log(mappedMovies)
+
+ 
+
+/* Ex.15
+   Write the function onlyThisMillennium that returns only the movies produced in this millennium.
+*/
+
+
+
+
+
+const thisMill = function (movies) {
+  return movies.filter(m => parseInt(m.Year)> 2000);
+}
+
+
+
+
+
+/* Ex.16 
+    Write the function getMovieById that receives an id and returns the movie with the given id.
+*/
+
+
+
+
+
+/* Ex.17
+    Write the function sumYears that returns the sum of the years the movie has been produced.
+*/
+
+/* Ex.18
+    Write the function searchMovie that receives a string and returns all the movies with that string in the title.
+*/
+    
+/* Ex.19
+    Write the function searchAndDivide that receives a string and returns an object with an array "match" with all the movies that contains the given string in the title, and another array "nonMatch" with all the other movies.
+*/
+
+/* Ex.20
+   Write the function deleteX that receives a number and returns an array without the element in the given position.
+*/
+
+/* Ex.21
+  Create a function halfTree that recives the height creates an "*" half tree with that height.
+  Example:
+  halfTree(3)
+  *
+  **
+  ***
+*/
+
+for (let line = "*"; line.length < 4; line += "*")
+console.log(line);
+
+/* Ex.22 
+Create a function tree that receives the height and creates an "*" tree with that height.
+Example: 
+tree(3)
+  *  
+ *** 
+*****
+*/
+
+/* Ex.23
+Create a function isItPrime that receives a number and returns true if the number is a prime number.*/
+
+function isPrime(num) {
+  for(let i = 2; i < num; i++)
+    if(num % i === 0) return false;
+  return num > 1;
+}
+
+//console.log(isPrime(567567567))
