@@ -106,7 +106,7 @@ HINT: Module Operator
 /* WRITE YOUR CODE HERE */
 
 const checkNumber = function (x) { // x has been defined here surely 
-    if (x % 3 && x % 7) {
+    if (x % 3===0 && x % 7===0) {
         return "this is a multiple of 3 & 7";
     }
 }
