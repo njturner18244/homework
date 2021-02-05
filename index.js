@@ -96,7 +96,6 @@ It should add the word "Strive" in front of the given string, but if the given s
 
 /* WRITE YOUR CODE HERE */
 
-//Maybe if I wasn´t so busy writing messages to amuse myself I would have had time to do this, sorry.
 
 
 /* EXERCISE 6
@@ -111,7 +110,7 @@ const checkNumber = function (x) { // x has been defined here surely
         return "this is a multiple of 3 & 7";
     }
 }
-
+ console.log(checkNumber(6))
 //I have done this from the Eloquent Javascript book, so here it is, I have tried working this into a function but evidently I was unable to do so :D
 
 for (let n = 1; n <= 100; n++) {
