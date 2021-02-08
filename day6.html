@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            table, th, td {
+              border: 1px solid black;
+              border-collapse: collapse;
+            }
+            th, td {
+              padding: 5px;
+            }
+            th {
+              text-align: left;
+            }
+            </style>
+    </head>
+
+    <body>
+        <h1>Willy Wonka´s Wonderland</h1> <!-- Function one applied to this -->
+        <div>
+        <table>
+            <thead>
+                <tr>
+                    <th>Product Description</th>
+                    <th>Image</th>
+                    <th class="price">Price</th>
+                    <th>Product Link</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Playstation 5</td>
+                    <td id="img1"><img src="https://cdn.mos.cms.futurecdn.net/Vh6eSp4siwggK7RUys72nP-970-80.jpg.webp" height = "125" width = "125" /> </td>
+                    <td>$500</td>
+                    <td> <a href="http://www.amazon.es" target="_blank"> Amazon.es </a> </td>
+                </tr>
+                <tr>
+                    <td>Roomba</td>
+                    <td id="img2"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS3-0do0Vw036tFG_QhnYR6vARcbx0MWq-yx60kmWpBJnzyH_hLsnRPy_4nATzSqsvYeCxKnTBh&usqp=CAc" alt="Roomba" height = "125" width = "125" /> </td>
+                    <td>$200</td>
+                    <td> <a href="http://www.amazon.es" target="_blank"> Amazon.es </a> </td>
+                    
+                </tr>
+                <tr>
+                    <td>Buzz Lightyear</td>
+                    <td id="img3"><img src="data:image/jpeg;base64,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" height = "125" width = "125" /></td>
+                    <td>$40</td>
+                    <td> <a href="http://www.amazon.es" target="_blank"> Amazon.es </a> </td>
+                </tr>
+                <tr>
+                    <td>Mountain Bike</td>
+                    <td id="img4"> <img src="https://dhb3yazwboecu.cloudfront.net/1168/000050230BM_000050230BN_Mountain-Bike_GTI-Design_l.jpg" height = "125" width = "125" /> </td>
+                    <td>$300</td>
+                    <td> <a href="http://www.amazon.es" target="_blank"> Amazon.es </a> </td>
+                </tr>
+                <tr>
+                    <td>Airpods</td>
+                    <td id="img5"> <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQncsSRBM9GpsksNQnvn3bZiYKTwu8hMj6gdhWCqnuQRJzmfjG56iiI2PL2v5_F879lVl0Xpjj1&usqp=CAc" height = 125 width = 125 /> </td>
+                    <td>$199</td>
+                    <td> <a href="http://www.amazon.es" target="_blank"> Amazon.es </a> </td>
+                </tr>
+            </tbody>
+            
+            <tfoot>
+                <td class="info"> Address: 123 A Road, A Country, The World, The Universe</td>
+                <td>Shop Name</td>
+              </tfoot>
+            
+
+        </table>
+    </div>
+    <br>
+
+    <form>
+        <div>
+            <textarea name="comments" id="comments">
+                Message here...
+            </textarea>
+        </div>
+    </form>
+
+    <br>
+
+    <script>
+
+        //ex 7 (change h1)
+
+        function firstHeading () {
+            let willyWonka = document.querySelector('h1')
+            willyWonka.style.color = 'pink'
+        }
+
+        // Function firstHeading() called here automatically makes changes
+        
+       
+       // ex 8 (change background colour)
+       
+        function backgroundColour () {
+
+            document.body.style.background = "purple"
+
+        }
+
+        //backgroundColour()
+
+        //Write a function to change the footer address with a fake one
+
+        function changeAddress () {
+         let newAddress = document.getElementsByTagName("info")
+           console.log(newAddress)
+           newAddress.color ="green"
+        }
+
+        
+
+//EX10.: Write a function to add a CSS class to every Amazon link
+
+
+
+
+
+
+//EX11: Write a function to toggle a CSS class for all the images in the table; that class should set the visibility of the image
+
+function images () { //I was running out of time will return and do this with for loops im guessing
+    let hiddenImage1 = document.getElementById("img1").style.visibility = "hidden";
+    let hiddenImage2 = document.getElementById("img2").style.visibility = "hidden";
+    let hiddenImage3 = document.getElementById("img3").style.visibility = "hidden";
+    let hiddenImage4 = document.getElementById("img4").style.visibility = "hidden";
+    let hiddenImage5= document.getElementById("img5").style.visibility = "hidden";
+}
+
+
+
+
+
+
+//EX12: Write a function to color the price of every product in a different one every time
+
+        
+
+    </script>
+
+
+
+  </body>
+</html>
